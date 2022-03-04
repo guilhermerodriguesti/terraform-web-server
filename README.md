@@ -1,11 +1,11 @@
 # web-server-terraform
-A simple web server terraform module for enabling blue-green deployments in AWS using terraform. This would work hand-in-hand with a shared configuration that would create and supply the details of all the shared resources required by this module. An example can be found [here](https://github.com/ifatoki/hashicorp-terraform)
+A simple web server terraform module for enabling blue-green deployments in AWS using terraform. This would work hand-in-hand with a shared configuration that would create and supply the details of all the shared resources required by this module. An example can be found [here](https://github.com/guilhermerodriguesti/hashicorp-terraform)
 
 
 ## Usage
 ```
 module "web_server_a" {
-  source = "git@github.com:ifatoki/web-server-terraform.git"
+  source = "git@github.com:guilhermerodriguesti/web-server-terraform.git"
 
   app_version = "a"
   elb_sg_id = aws_security_group.elb.id
